@@ -1,0 +1,7 @@
+all:
+  tar xvf autograde.tar
+  cp test.py test.py-handout
+  (cd autograder_test-handout; ./driver.sh)
+
+clean:
+  rm -rf *~ autograder_test-handout
